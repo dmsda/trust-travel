@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Sunburst Compass Symbol -->
+  <g transform="translate(2, 2)">
+    <path d="M14 0L15.8 11.5L28 14L15.8 16.5L14 28L12.2 16.5L0 14L12.2 11.5L14 0Z" fill="#B9A17D" />
+    <path d="M14 4.5L15.2 12.8L23.5 14L15.2 15.2L14 23.5L12.8 15.2L4.5 14L12.8 12.8L14 4.5Z" fill="#171614" opacity="0.6" />
+    <circle cx="14" cy="14" r="2.8" fill="#FAF9F6" />
+    <circle cx="14" cy="14" r="1.5" fill="#B9A17D" />
+  </g>
+</svg>

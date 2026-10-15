@@ -1,1 +1,291 @@
 @import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-warm-bg: #FAF9F6;
+  --color-surface: #FFFFFF;
+  --color-stone-muted: #F0EEEA;
+  --color-stone-border: #E5E1DA;
+  --color-charcoal-text: #171614;
+  --color-secondary-text: #77736E;
+  --color-gold-accent: #B9A17D;
+  --color-gold-accent-hover: #A58D6B;
+  --color-dark-section: #191815;
+  --color-success: #287A55;
+  --color-error: #B42318;
+}
+
+:root {
+  --bg-warm: #FAF9F6;
+  --surface: #FFFFFF;
+  --text-primary: #171614;
+  --text-secondary: #77736E;
+  --border-light: #E5E1DA;
+  --accent-gold: #B9A17D;
+
+  /* Global Motion Tokens */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --duration-micro: 180ms;
+  --duration-standard: 320ms;
+  --duration-editorial: 650ms;
+  --duration-cinematic: 950ms;
+}
+
+/* Base Body Setup */
+body {
+  background-color: #FAF9F6;
+  color: #171614;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Serif Headings */
+h1, h2, h3, .font-serif-editorial {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+/* Arched Image Card Shapes matching the reference design */
+.arch-card-left {
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.arch-card-tall {
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.arch-card-right {
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+/* Custom Scrollbar for horizontal scrolling galleries */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ==========================================================================
+   MOTION DESIGN SYSTEM & KEYFRAMES
+   ========================================================================== */
+
+/* SVG Line Animation */
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLine 2.5s var(--ease-editorial) forwards;
+}
+
+/* Editorial Underline Draw */
+@keyframes drawUnderline {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Hero Entrance Animations */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hero-line-1 {
+  animation: heroFadeUp 0.85s var(--ease-editorial) 0.1s both;
+}
+
+.animate-hero-line-2 {
+  animation: heroFadeUp 0.85s var(--ease-editorial) 0.28s both;
+}
+
+.animate-hero-search {
+  animation: heroFadeUp 0.9s var(--ease-editorial) 0.45s both;
+}
+
+.draw-underline-init {
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.8s var(--ease-editorial);
+}
+
+.draw-underline-active {
+  transform: scaleX(1);
+}
+
+/* Signature Brand Compass Rotation */
+@keyframes compassGentleSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-compass-spin {
+  animation: compassGentleSpin 30s linear infinite;
+}
+
+/* Elastic Micro-Bounce for Favorite Heart */
+@keyframes heartBounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.35);
+  }
+  60% {
+    transform: scale(0.92);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-heart-bounce {
+  animation: heartBounce 450ms var(--ease-spring);
+}
+
+/* Subtle Shimmer Flash for Price Recalculation */
+@keyframes priceUpdate {
+  0% {
+    color: #B9A17D;
+    transform: translateY(-2px);
+  }
+  100% {
+    color: #171614;
+    transform: translateY(0);
+  }
+}
+
+.animate-price-update {
+  animation: priceUpdate 500ms var(--ease-editorial);
+}
+
+/* Floating Vignettes in Dark Section */
+@keyframes floatVignetteSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes floatVignetteMed {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-1.5deg);
+  }
+}
+
+.float-slow {
+  animation: floatVignetteSlow 7s ease-in-out infinite;
+}
+
+.float-med {
+  animation: floatVignetteMed 5.5s ease-in-out infinite;
+}
+
+/* Subtle Hover Zoom & Elevation */
+.card-hover-zoom {
+  transition: transform 0.5s var(--ease-editorial), box-shadow 0.5s ease;
+}
+.card-hover-zoom:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -15px rgba(23, 22, 20, 0.12);
+}
+.card-hover-zoom:hover img {
+  transform: scale(1.045);
+}
+
+.image-zoom-target {
+  transition: transform 0.75s var(--ease-editorial);
+}
+
+/* Stagger Utilities */
+.stagger-1 { transition-delay: 100ms; }
+.stagger-2 { transition-delay: 200ms; }
+.stagger-3 { transition-delay: 300ms; }
+.stagger-4 { transition-delay: 400ms; }
+.stagger-5 { transition-delay: 500ms; }
+
+/* 3D Perspective Container for Destination Cards */
+.perspective-container {
+  perspective: 1200px;
+}
+
+.tilt-card {
+  transition: transform 0.55s var(--ease-editorial), box-shadow 0.55s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* ==========================================================================
+   ACCESSIBILITY & REDUCED MOTION PREFERENCES
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-draw-line {
+    stroke-dashoffset: 0 !important;
+    animation: none !important;
+  }
+
+  .animate-compass-spin,
+  .animate-heart-bounce,
+  .animate-price-update,
+  .float-slow,
+  .float-med {
+    animation: none !important;
+  }
+
+  .tilt-card {
+    transform: none !important;
+  }
+}

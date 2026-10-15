@@ -1,0 +1,16 @@
+{
+  "name": "TRUST.TRAVEL",
+  "short_name": "TRUST.TRAVEL",
+  "description": "Effortless bookings for leisure travel or business.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F6",
+  "theme_color": "#171614",
+  "icons": [
+    {
+      "src": "/assets/brand/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

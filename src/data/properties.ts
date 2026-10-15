@@ -1,0 +1,395 @@
+import { Property } from '@/types';
+
+export const properties: Property[] = [
+  {
+    id: 'prop-milan-brera',
+    slug: 'the-brera-atelier-suite',
+    title: 'The Brera Atelier Suite',
+    subtitle: 'Sophisticated artist residence steps from Pinacoteca di Brera',
+    type: 'hotels',
+    typeName: 'Boutique Hotel',
+    destinationSlug: 'italy',
+    destinationName: 'Milan, Italy',
+    location: 'Via Fiori Chiari, Brera, Milan, Italy',
+    coordinates: { lat: 45.4716, lng: 9.1878 },
+    pricePerNight: 380,
+    currency: 'USD',
+    rating: 4.96,
+    reviewCount: 142,
+    maxGuests: 3,
+    bedrooms: 1,
+    beds: 2,
+    bathrooms: 1,
+    coverImage: '/assets/images/properties/hotel-01.jpg',
+    gallery: [
+      '/assets/images/properties/hotel-01.jpg',
+      '/assets/images/properties/apartment-01.jpg',
+      '/assets/images/destinations/italy.jpg',
+      '/assets/images/properties/hotel-02.jpg',
+      '/assets/images/property-types/boutique.jpg'
+    ],
+    featured: true,
+    freeCancellation: true,
+    breakfastIncluded: true,
+    amenityIds: ['wifi', 'workspace', 'air-conditioning', 'breakfast', 'espresso', 'concierge'],
+    overview: 'Located in the heart of Milan’s bohemian arts district, The Brera Atelier Suite harmonizes Italian mid-century modernist furniture with hand-plastered walls and brushed brass fixtures. Guests enjoy custom linen bedding, an acoustic listening corner with vintage vinyl records, and curated morning pastries from an artisanal pasticceria below.',
+    rules: [
+      'Check-in from 15:00 onwards; early check-in subject to availability.',
+      'Check-out strictly by 11:00.',
+      'Non-smoking property throughout all indoor suites and balconies.',
+      'Quiet hours observed between 22:00 and 08:00.'
+    ],
+    cancellationPolicy: 'Free cancellation up to 48 hours before check-in. Cancellations within 48 hours receive a 50% refund minus service fees.',
+    checkInTime: '15:00',
+    checkOutTime: '11:00',
+    reviews: [
+      {
+        id: 'rev-1',
+        author: 'Elena Rostova',
+        authorLocation: 'Geneva, Switzerland',
+        rating: 5,
+        date: 'October 2025',
+        comment: 'Every detail felt intentional. From the quiet morning espresso on the Juliet balcony to the incredibly comfortable bed. The Brera district is unmatched for evening strolls.'
+      },
+      {
+        id: 'rev-2',
+        author: 'Marcus Vance',
+        authorLocation: 'London, UK',
+        rating: 5,
+        date: 'September 2025',
+        comment: 'Exceptional host communication. Fast fiber internet made working remotely effortless, and the neighborhood bakeries were divine.'
+      }
+    ]
+  },
+  {
+    id: 'prop-berlin-mitte',
+    slug: 'mitte-heritage-grand',
+    title: 'Mitte Heritage Grand Loft',
+    subtitle: 'High-ceilinged minimalist sanctuary in central Berlin',
+    type: 'hotels',
+    typeName: 'Hotel',
+    destinationSlug: 'germany',
+    destinationName: 'Berlin, Germany',
+    location: 'Linienstraße, Mitte, Berlin, Germany',
+    coordinates: { lat: 52.528, lng: 13.401 },
+    pricePerNight: 290,
+    currency: 'USD',
+    rating: 4.92,
+    reviewCount: 98,
+    maxGuests: 4,
+    bedrooms: 2,
+    beds: 2,
+    bathrooms: 2,
+    coverImage: '/assets/images/properties/hotel-02.jpg',
+    gallery: [
+      '/assets/images/properties/hotel-02.jpg',
+      '/assets/images/destinations/germany.jpg',
+      '/assets/images/properties/apartment-01.jpg',
+      '/assets/images/property-types/apartments.jpg',
+      '/assets/images/property-types/hotels.jpg'
+    ],
+    featured: true,
+    freeCancellation: true,
+    breakfastIncluded: false,
+    amenityIds: ['wifi', 'workspace', 'kitchen', 'espresso', 'concierge', 'parking'],
+    overview: 'A masterclass in contemporary German architectural restraint. This expansive loft occupies a nineteenth-century textile manufactory, reimagined with oiled oak herringbone floors, bespoke steel glazing, and museum-grade Scandinavian lighting.',
+    rules: [
+      'Self check-in with encrypted digital keypad.',
+      'No commercial photo or video shoots without prior written consent.',
+      'Check-in 16:00, check-out 11:00.'
+    ],
+    cancellationPolicy: 'Cancel up to 5 days before scheduled arrival for a full refund.',
+    checkInTime: '16:00',
+    checkOutTime: '11:00',
+    reviews: [
+      {
+        id: 'rev-3',
+        author: 'Sofia Lindqvist',
+        authorLocation: 'Stockholm, Sweden',
+        rating: 5,
+        date: 'August 2025',
+        comment: 'Immaculately styled with soaring ceilings. Walking distance to Auguststraße galleries and exquisite specialty coffee bars.'
+      }
+    ]
+  },
+  {
+    id: 'prop-tuscany-villa',
+    slug: 'villa-bellavista-chianti',
+    title: 'Villa Bellavista Chianti',
+    subtitle: 'Panoramic stone estate with private infinity pool and vineyards',
+    type: 'villas',
+    typeName: 'Villa',
+    destinationSlug: 'italy',
+    destinationName: 'Tuscany, Italy',
+    location: 'Strada del Chianti, Greve in Chianti, Italy',
+    coordinates: { lat: 43.585, lng: 11.315 },
+    pricePerNight: 740,
+    currency: 'USD',
+    rating: 4.98,
+    reviewCount: 84,
+    maxGuests: 8,
+    bedrooms: 4,
+    beds: 5,
+    bathrooms: 4,
+    coverImage: '/assets/images/properties/villa-01.jpg',
+    gallery: [
+      '/assets/images/properties/villa-01.jpg',
+      '/assets/images/destinations/italy.jpg',
+      '/assets/images/property-types/villas.jpg',
+      '/assets/images/properties/hotel-01.jpg',
+      '/assets/images/property-types/cottages.jpg'
+    ],
+    featured: true,
+    freeCancellation: false,
+    breakfastIncluded: true,
+    amenityIds: ['wifi', 'pool', 'fireplace', 'terrace', 'garden', 'parking', 'kitchen', 'pet-friendly'],
+    overview: 'Surrounded by century-old olive groves and sangiovese vines, Villa Bellavista dates back to 1640. Carefully restored using reclaimed terracotta and local pietra serena sandstone, the villa offers private infinity swimming, an outdoor wood-fired pizza oven, and sunset views over rolling Tuscan ridges.',
+    rules: [
+      'Check-in 16:00 to 20:00.',
+      'Private pool open May through October.',
+      'Well-behaved dogs welcome with advance notification.'
+    ],
+    cancellationPolicy: 'Full refund for cancellations made within 48 hours of booking if arrival is at least 14 days away.',
+    checkInTime: '16:00',
+    checkOutTime: '10:00',
+    reviews: [
+      {
+        id: 'rev-4',
+        author: 'Julian & Claire Davies',
+        authorLocation: 'Melbourne, Australia',
+        rating: 5,
+        date: 'September 2025',
+        comment: 'A dreamlike week with our family. We cooked in the open kitchen every evening watching the sun dip behind the cypress trees. Pure magic.'
+      }
+    ]
+  },
+  {
+    id: 'prop-scotland-cottage',
+    slug: 'loch-fyne-fisherman-cottage',
+    title: 'Loch Fyne Fisherman Cottage',
+    subtitle: 'Historic whitewashed coastal cottage on the loch shoreline',
+    type: 'cottages',
+    typeName: 'Cottage',
+    destinationSlug: 'scotland',
+    destinationName: 'Highlands, Scotland',
+    location: 'Cairndow, Loch Fyne, Argyll, Scotland',
+    coordinates: { lat: 56.258, lng: -4.939 },
+    pricePerNight: 245,
+    currency: 'USD',
+    rating: 4.95,
+    reviewCount: 167,
+    maxGuests: 4,
+    bedrooms: 2,
+    beds: 3,
+    bathrooms: 1,
+    coverImage: '/assets/images/properties/cottage-01.jpg',
+    gallery: [
+      '/assets/images/properties/cottage-01.jpg',
+      '/assets/images/destinations/scotland.jpg',
+      '/assets/images/property-types/cottages.jpg',
+      '/assets/images/properties/cabin-01.jpg',
+      '/assets/images/hero/hero-travel.jpg'
+    ],
+    featured: true,
+    freeCancellation: true,
+    breakfastIncluded: false,
+    amenityIds: ['wifi', 'fireplace', 'kitchen', 'parking', 'terrace', 'pet-friendly'],
+    overview: 'A tranquil sanctuary on the tranquil waters of Loch Fyne. Featuring a roaring cast-iron log stove, Scottish wool throws, an honesty whisky bar, and direct shoreline access for morning wild swimming or oyster foraging.',
+    rules: [
+      'Fireplace instructions must be adhered to; firewood and kindling provided.',
+      'Check-in 15:00, check-out 10:30.'
+    ],
+    cancellationPolicy: 'Free cancellation up to 7 days before arrival.',
+    checkInTime: '15:00',
+    checkOutTime: '10:30',
+    reviews: [
+      {
+        id: 'rev-5',
+        author: 'Alasdair MacLeod',
+        authorLocation: 'Edinburgh, UK',
+        rating: 5,
+        date: 'July 2025',
+        comment: 'The silence here is restorative. Sitting by the fire with the rain tapping on the roof after a day hiking the hills was unforgettable.'
+      }
+    ]
+  },
+  {
+    id: 'prop-nordic-cabin',
+    slug: 'nordic-pine-sanctuary',
+    title: 'Nordic Pine Sanctuary',
+    subtitle: 'Architectural timber retreat secluded in the alpine evergreen canopy',
+    type: 'cabins',
+    typeName: 'Cabin',
+    destinationSlug: 'germany',
+    destinationName: 'Bavarian Alps, Germany',
+    location: 'Garmisch-Partenkirchen, Bavaria, Germany',
+    coordinates: { lat: 47.492, lng: 11.095 },
+    pricePerNight: 320,
+    currency: 'USD',
+    rating: 4.97,
+    reviewCount: 112,
+    maxGuests: 4,
+    bedrooms: 2,
+    beds: 2,
+    bathrooms: 1,
+    coverImage: '/assets/images/properties/cabin-01.jpg',
+    gallery: [
+      '/assets/images/properties/cabin-01.jpg',
+      '/assets/images/destinations/germany.jpg',
+      '/assets/images/property-types/cabins.jpg',
+      '/assets/images/properties/cottage-01.jpg',
+      '/assets/images/properties/hotel-02.jpg'
+    ],
+    featured: true,
+    freeCancellation: true,
+    breakfastIncluded: true,
+    amenityIds: ['wifi', 'spa', 'fireplace', 'kitchen', 'parking', 'workspace'],
+    overview: 'Engineered from local Douglas fir and dark slate, this minimalist cabin blurs the boundary between interior and alpine wilderness. Floor-to-ceiling glass looks out over snow-capped peaks, while a private outdoor cedar sauna offers total tranquility.',
+    rules: [
+      'Snow chains required for vehicle access during winter months.',
+      'Sauna usage guidelines posted inside.'
+    ],
+    cancellationPolicy: 'Cancel up to 14 days in advance for full refund.',
+    checkInTime: '15:00',
+    checkOutTime: '11:00',
+    reviews: [
+      {
+        id: 'rev-6',
+        author: 'Hannah Braun',
+        authorLocation: 'Munich, Germany',
+        rating: 5,
+        date: 'January 2025',
+        comment: 'The cedar sauna followed by fresh snow plunges was heavenly. The architectural lines are breathtaking.'
+      }
+    ]
+  },
+  {
+    id: 'prop-bali-resort',
+    slug: 'uluwatu-cliff-sanctuary',
+    title: 'Uluwatu Cliff Sanctuary',
+    subtitle: 'Clifftop ocean pavilion perched 100 meters above the Indian Ocean',
+    type: 'resorts',
+    typeName: 'Resort',
+    destinationSlug: 'indonesia',
+    destinationName: 'Bali, Indonesia',
+    location: 'Jalan Pantai Suluban, Uluwatu, Bali, Indonesia',
+    coordinates: { lat: -8.829, lng: 115.088 },
+    pricePerNight: 550,
+    currency: 'USD',
+    rating: 4.99,
+    reviewCount: 204,
+    maxGuests: 4,
+    bedrooms: 2,
+    beds: 2,
+    bathrooms: 2,
+    coverImage: '/assets/images/properties/resort-01.jpg',
+    gallery: [
+      '/assets/images/properties/resort-01.jpg',
+      '/assets/images/destinations/indonesia.jpg',
+      '/assets/images/properties/villa-01.jpg',
+      '/assets/images/property-types/resorts.jpg',
+      '/assets/images/property-types/beach-houses.jpg'
+    ],
+    featured: true,
+    freeCancellation: false,
+    breakfastIncluded: true,
+    amenityIds: ['wifi', 'pool', 'spa', 'breakfast', 'air-conditioning', 'concierge', 'terrace'],
+    overview: 'Hovering over limestone cliffs with unobstructed views of crashing Indian Ocean waves, this world-renowned sanctuary offers floating breakfasts, open-air rainwater showers, private infinity plunge pools, and daily sunset yoga rituals.',
+    rules: [
+      'Strict adult-oriented quiet sanctuary (guests aged 16+).',
+      'Check-in 14:00, check-out 12:00.'
+    ],
+    cancellationPolicy: 'Non-refundable within 30 days of arrival.',
+    checkInTime: '14:00',
+    checkOutTime: '12:00',
+    reviews: [
+      {
+        id: 'rev-7',
+        author: 'David & Mia Chen',
+        authorLocation: 'Singapore',
+        rating: 5,
+        date: 'August 2025',
+        comment: 'The sound of the ocean below and the sunset light over the cliff is unmatched anywhere in the world. Impeccable Balinese hospitality.'
+      }
+    ]
+  },
+  {
+    id: 'prop-paris-apartment',
+    slug: 'le-marais-light-loft',
+    title: 'Le Marais Light Loft',
+    subtitle: 'Classic Haussmannian apartment with courtyard serenity',
+    type: 'apartments',
+    typeName: 'Apartment',
+    destinationSlug: 'italy', // alternative European city showcase
+    destinationName: 'Paris & Milan Corridor',
+    location: 'Rue des Francs-Bourgeois, Le Marais',
+    coordinates: { lat: 48.857, lng: 2.36 },
+    pricePerNight: 310,
+    currency: 'USD',
+    rating: 4.89,
+    reviewCount: 76,
+    maxGuests: 3,
+    bedrooms: 1,
+    beds: 2,
+    bathrooms: 1,
+    coverImage: '/assets/images/properties/apartment-01.jpg',
+    gallery: [
+      '/assets/images/properties/apartment-01.jpg',
+      '/assets/images/property-types/apartments.jpg',
+      '/assets/images/properties/hotel-01.jpg',
+      '/assets/images/destinations/italy.jpg',
+      '/assets/images/property-types/boutique.jpg'
+    ],
+    featured: false,
+    freeCancellation: true,
+    breakfastIncluded: false,
+    amenityIds: ['wifi', 'workspace', 'kitchen', 'espresso'],
+    overview: 'High ceilings, ornate plaster cornices, and contemporary French craftsmanship define this peaceful hideaway located moments from world-renowned boutiques and museums.',
+    rules: ['No parties or gatherings.', 'Check-in 15:00, check-out 11:00.'],
+    cancellationPolicy: 'Free cancellation up to 48 hours before check-in.',
+    checkInTime: '15:00',
+    checkOutTime: '11:00',
+    reviews: []
+  },
+  {
+    id: 'prop-kyoto-ryokan',
+    slug: 'arashiyama-cedar-ryokan',
+    title: 'Arashiyama Cedar Ryokan',
+    subtitle: 'Traditional wooden machiya with private cypress onsen bath',
+    type: 'boutique',
+    typeName: 'Boutique Hotel',
+    destinationSlug: 'japan',
+    destinationName: 'Kyoto, Japan',
+    location: 'Saga Tenryuji, Ukyo Ward, Kyoto, Japan',
+    coordinates: { lat: 35.016, lng: 135.671 },
+    pricePerNight: 490,
+    currency: 'USD',
+    rating: 4.97,
+    reviewCount: 119,
+    maxGuests: 2,
+    bedrooms: 1,
+    beds: 2,
+    bathrooms: 1,
+    coverImage: '/assets/images/destinations/japan.jpg',
+    gallery: [
+      '/assets/images/destinations/japan.jpg',
+      '/assets/images/property-types/boutique.jpg',
+      '/assets/images/property-types/guesthouses.jpg',
+      '/assets/images/properties/hotel-01.jpg',
+      '/assets/images/properties/cabin-01.jpg'
+    ],
+    featured: true,
+    freeCancellation: true,
+    breakfastIncluded: true,
+    amenityIds: ['wifi', 'spa', 'breakfast', 'garden', 'concierge'],
+    overview: 'Nestled beside the whispering bamboo grove of Arashiyama, this heritage ryokan features aromatic hinoki cedar hot spring baths, tatami mat rooms, and multi-course kaiseki meals celebrating seasonal Kyoto agriculture.',
+    rules: [
+      'Traditional footwear removal protocol strictly observed.',
+      'Check-in 15:00, check-out 11:00.'
+    ],
+    cancellationPolicy: 'Free cancellation up to 7 days before arrival.',
+    checkInTime: '15:00',
+    checkOutTime: '11:00',
+    reviews: []
+  }
+];
