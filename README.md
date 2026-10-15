@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![TRUST.TRAVEL Banner](/assets/brand/og-cover.svg)
+<img src="https://raw.githubusercontent.com/dmsda/trust-travel/master/public/assets/brand/og-cover.svg" alt="TRUST.TRAVEL Banner" width="100%" />
 
 ### Editorial Luxury Hotel Rental & Travel Booking Platform
 
@@ -16,6 +16,22 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-B9A17D?style=flat-square)](LICENSE)
 
 [Architecture](docs/ARCHITECTURE.md) • [Design System](docs/DESIGN-SYSTEM.md) • [Motion & Gallery](docs/MOTION-AND-INTERACTION.md) • [Booking Engine](docs/BOOKING-FLOW.md) • [Assets & Licenses](docs/ASSETS-AND-LICENSING.md) • [Deployment](docs/DEPLOYMENT.md)
+
+</div>
+
+---
+
+## ✦ Visual Preview
+
+<div align="center">
+
+| Homepage & Interactive Search | Stays 5-Photo Luxury Gallery |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/dmsda/trust-travel/master/public/assets/screenshots/homepage-hero.png" alt="Homepage Hero Preview" width="100%" /> | <img src="https://raw.githubusercontent.com/dmsda/trust-travel/master/public/assets/screenshots/stays-gallery.png" alt="Stays Gallery Preview" width="100%" /> |
+
+| Arched Destination Showcase | Fullscreen Image Lightbox |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/dmsda/trust-travel/master/public/assets/screenshots/destinations.png" alt="Destination Showcase Preview" width="100%" /> | <img src="https://raw.githubusercontent.com/dmsda/trust-travel/master/public/assets/screenshots/gallery-lightbox.png" alt="Gallery Lightbox Preview" width="100%" /> |
 
 </div>
 
